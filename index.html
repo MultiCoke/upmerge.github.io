@@ -474,8 +474,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 </body>
 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=BYxkWSKy8IGkut0OZqZHPzS11cFW5ILCOqX0Gq-5-bY" display="none"></script>
 <script>
-  window.onload(function(){
-    document.querySelectorAll(".clstrm_outer").childNodes.style.display="none";
-  });
+  window.onload = function(){
+        let f = document.getElementsByClassName("clstr_outer")[0];
+        for(let i = 0; i < f.children.length; i++){
+            f.children[i].style.display='none';
+        }
+    }
 </script>
 </html>
